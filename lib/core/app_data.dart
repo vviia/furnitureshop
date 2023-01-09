@@ -54,17 +54,17 @@ class AppData {
     Furniture(
       quantity: 1,
       isFavorite: false,
-      title: 'Kana Pro Bamboo Standing Desk',
+      title: 'sevia Pro Bamboo Standing Desk',
       description: dummyText,
       price: 659.99,
       score: 3.0,
       images: [
-        AppAsset.kanaBambooDesk1,
-        AppAsset.kanaBambooDesk2,
-        AppAsset.kanaBambooDesk3,
-        AppAsset.kanaBambooDesk4,
-        AppAsset.kanaBambooDesk5,
-        AppAsset.kanaBambooDesk6,
+        AppAsset.seviaBambooDesk1,
+        AppAsset.seviaBambooDesk2,
+        AppAsset.seviaBambooDesk3,
+        AppAsset.seviaBambooDesk4,
+        AppAsset.seviaBambooDesk5,
+        AppAsset.seviaBambooDesk6,
       ],
       colors: <FurnitureColor>[
         FurnitureColor(color: const Color(0xFF616161), isSelected: true),
@@ -112,5 +112,11 @@ class AppData {
     ),
   ];
 
-  static List<BottomNavigationItem> bottomNavigationItems = [BottomNavigationItem(const Icon(Icons.home), 'Home'), BottomNavigationItem(const Icon(Icons.add_shopping_cart_rounded), 'Shopping cart'), BottomNavigationItem(const Icon(Icons.bookmark), 'Favorite'), BottomNavigationItem(const Icon(Icons.person), 'Profile')];
+  static List<BottomNavigationItem> bottomNavigationItems = [
+    BottomNavigationItem(const Icon(Icons.home), 'Home'),
+    BottomNavigationItem(
+        const Icon(Icons.add_shopping_cart_rounded), 'Shopping cart'),
+    BottomNavigationItem(const Icon(Icons.bookmark), 'Favorite'),
+    BottomNavigationItem(const Icon(Icons.person), 'Profile')
+  ];
 }

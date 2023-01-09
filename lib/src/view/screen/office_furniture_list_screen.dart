@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:office_app_store/core/app_data.dart';
 import 'package:office_app_store/core/app_style.dart';
 import 'package:office_app_store/src/model/furniture.dart';
 import 'package:office_app_store/src/view/screen/office_furniture_detail_screen.dart';
+import 'package:office_app_store/src/view/screen/login.dart';
 import '../widget/furniture_list_view.dart';
 
 class OfficeFurnitureListScreen extends StatelessWidget {
   const OfficeFurnitureListScreen({Key? key}) : super(key: key);
 
+  @override
   PreferredSize _appBar() {
     return PreferredSize(
       preferredSize: const Size.fromHeight(120),
@@ -18,6 +21,7 @@ class OfficeFurnitureListScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   Text("Hello, Good Morning.", style: h2Style),
@@ -42,10 +46,17 @@ class OfficeFurnitureListScreen extends StatelessWidget {
               //   onPressed: () {},
               //   icon: const Icon(Icons.menu),
               // )
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.login),
-              )
+              InkWell(
+                child: IconButton(
+                  icon: const Icon(Icons.login),
+                  onPressed: () {
+                    Get.to(const LoginScreen());
+                  },
+                ),
+                onTap: () {
+                  Get.to(const LoginScreen());
+                },
+              ),
             ],
           ),
         ),

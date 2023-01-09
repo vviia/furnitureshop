@@ -23,7 +23,8 @@ class IntroScreen extends StatelessWidget {
               padding: MaterialStateProperty.all<EdgeInsetsGeometry?>(
                 const EdgeInsets.all(8),
               ),
-              backgroundColor: MaterialStateProperty.all(Colors.white.withOpacity(0.4)),
+              backgroundColor:
+                  MaterialStateProperty.all(Colors.white.withOpacity(0.4)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25.0),
@@ -50,6 +51,7 @@ class IntroScreen extends StatelessWidget {
             image: DecorationImage(
               image: AssetImage("assets/images/intro.jpg"),
               fit: BoxFit.cover,
+              // opacity: 0.4,
             ),
           ),
           child: Padding(
@@ -60,12 +62,12 @@ class IntroScreen extends StatelessWidget {
               children: [
                 const Spacer(flex: 3),
                 Text(
-                  "Kana Office\nStanding\nDesk",
+                  "Sevia\nStanding\nDesk",
                   style: h1Style.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 5),
                 Text(
-                  "Create a sustainable work space with 100% natural bamboo",
+                  "Create a sustainable workspace with 100% natural wood",
                   style: h3Style.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 20),

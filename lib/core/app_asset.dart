@@ -20,12 +20,12 @@ class AppAsset {
   static const ergonomicGamingDesk5 =
       "assets/images/ergonomic_gaming_desk_5.jpg";
 
-  static const kanaBambooDesk1 = "assets/images/kana_bamboo_desk_1.jpg";
-  static const kanaBambooDesk2 = "assets/images/kana_bamboo_desk_2.jpg";
-  static const kanaBambooDesk3 = "assets/images/kana_bamboo_desk_3.jpg";
-  static const kanaBambooDesk4 = "assets/images/kana_bamboo_desk_4.jpg";
-  static const kanaBambooDesk5 = "assets/images/kana_bamboo_desk_5.jpg";
-  static const kanaBambooDesk6 = "assets/images/kana_bamboo_desk_6.jpg";
+  static const seviaBambooDesk1 = "assets/images/sevia_bamboo_desk_1.jpg";
+  static const seviaBambooDesk2 = "assets/images/sevia_bamboo_desk_2.jpg";
+  static const seviaBambooDesk3 = "assets/images/sevia_bamboo_desk_3.jpg";
+  static const seviaBambooDesk4 = "assets/images/sevia_bamboo_desk_4.jpg";
+  static const seviaBambooDesk5 = "assets/images/sevia_bamboo_desk_5.jpg";
+  static const seviaBambooDesk6 = "assets/images/sevia_bamboo_desk_6.jpg";
 
   static const soutienOfficeChair1 = "assets/images/soutien_office_chair_1.jpg";
   static const soutienOfficeChair2 = "assets/images/soutien_office_chair_2.jpg";

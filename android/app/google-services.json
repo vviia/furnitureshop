@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "104171650341",
+    "project_id": "sevia-7f0f0",
+    "storage_bucket": "sevia-7f0f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104171650341:android:76eb67ecff11822de7eecc",
+        "android_client_info": {
+          "package_name": "com.example.office_app_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104171650341-60kfsv0be9ekhalsh7m0sgh9lci1t0ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4rdVGVFlnIp9CskglRMaBh_S8GkYvrew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104171650341-60kfsv0be9ekhalsh7m0sgh9lci1t0ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
