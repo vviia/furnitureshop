@@ -4,10 +4,6 @@
 
 
 this project is developing from :  [Mansuriosdev](https://github.com/Mansurisodev)
-
-![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_store_app.jpg?raw=true)
-
-
   <br/>
 
 
@@ -22,8 +18,16 @@ Preview                    |   List screen             |   Detail Screen        
 
 
   <br/>
+  
+  
 ## screenshoot
-login screen | profile screen
+
+
+
+Intro Screen | login screen | profile screen
+:---: | :---: | :---:
+<img src="https://user-images.githubusercontent.com/86775678/211602504-b45b0b92-150f-4113-bc0d-0a7d0349c45d.jpg" width=50% height=50% > |<img src="https://user-images.githubusercontent.com/86775678/211600640-1ea7850e-a3a2-41fc-b93b-65c97d1da4f3.jpg" width=50% height=50% > | <img src="https://user-images.githubusercontent.com/86775678/211599273-9b926c22-13da-4bf8-a6df-de743d05b5c9.jpg" width=50% height=50% >
+
 
   <br/>
 
