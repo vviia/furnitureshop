@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:office_app_store/src/view/screen/setting_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -98,11 +100,14 @@ class ProfileScreen extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.only(top: 25.0),
-            child: const Card(
+            child: Card(
               child: ListTile(
-                leading: Icon(Icons.settings),
-                title: Text('Setting'),
-                trailing: Icon(Icons.arrow_forward_ios),
+                onTap: () {
+                  Get.to(const SettingScreen());
+                },
+                leading: const Icon(Icons.settings),
+                title: const Text('Setting'),
+                trailing: const Icon(Icons.arrow_forward_ios),
               ),
             ),
           ),
