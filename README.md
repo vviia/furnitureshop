@@ -33,6 +33,9 @@ Intro Screen | login screen | profile screen
 
 Setting Screen | Billing Details screen | Order History Screen | User Management | information | Logout
 :---: | :---: | :---: | :---: | :---: | :---: 
+<img src="https://user-images.githubusercontent.com/86775678/212104585-23d8eabb-51c1-4f48-8906-a65efaba4591.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212104822-f34cb5b6-6e3f-49c6-a48a-ba5d0714948b.png" width=50% height=50%> |
+
+
 
   <br/>
 
