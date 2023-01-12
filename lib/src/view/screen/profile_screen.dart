@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:office_app_store/src/view/screen/billing_detail.dart';
+import 'package:office_app_store/src/view/screen/information.dart';
+import 'package:office_app_store/src/view/screen/order_histori.dart';
 import 'package:office_app_store/src/view/screen/setting_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -111,11 +114,14 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
           ),
-          const Card(
+          Card(
             child: ListTile(
-              leading: Icon(Icons.card_membership),
-              title: Text('Billing Details'),
-              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Get.to(const BilingDetail());
+              },
+              leading: const Icon(Icons.card_membership),
+              title: const Text('Billing Details'),
+              trailing: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           // const Card(
@@ -125,11 +131,14 @@ class ProfileScreen extends StatelessWidget {
           //     trailing: Icon(Icons.arrow_forward_ios),
           //   ),
           // ),
-          const Card(
+          Card(
             child: ListTile(
-              leading: Icon(Icons.gif_box),
-              title: Text('order history'),
-              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Get.to(const OrderHistory());
+              },
+              leading: const Icon(Icons.gif_box),
+              title: const Text('order history'),
+              trailing: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           const Card(
@@ -139,11 +148,14 @@ class ProfileScreen extends StatelessWidget {
               trailing: Icon(Icons.arrow_forward_ios),
             ),
           ),
-          const Card(
+          Card(
             child: ListTile(
-              leading: Icon(Icons.info_rounded),
-              title: Text('Informations'),
-              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Get.to(const InformationScreen());
+              },
+              leading: const Icon(Icons.info_rounded),
+              title: const Text('Informations'),
+              trailing: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           const Card(
