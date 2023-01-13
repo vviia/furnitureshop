@@ -26,14 +26,14 @@ Preview                    |   List screen             |   Detail Screen        
 
 Intro Screen | login screen | profile screen
 :---: | :---: | :---:
-<img src="https://user-images.githubusercontent.com/86775678/211602504-b45b0b92-150f-4113-bc0d-0a7d0349c45d.jpg" width=50% height=50% > |<img src="https://user-images.githubusercontent.com/86775678/211600640-1ea7850e-a3a2-41fc-b93b-65c97d1da4f3.jpg" width=50% height=50% > | <img src="https://user-images.githubusercontent.com/86775678/211599273-9b926c22-13da-4bf8-a6df-de743d05b5c9.jpg" width=50% height=50% >
+<img src="https://user-images.githubusercontent.com/86775678/211602504-b45b0b92-150f-4113-bc0d-0a7d0349c45d.jpg" width=50% height=50% > |<img src="https://user-images.githubusercontent.com/86775678/211600640-1ea7850e-a3a2-41fc-b93b-65c97d1da4f3.jpg" width=50% height=50% > |<img src="https://user-images.githubusercontent.com/86775678/212347829-a86df766-99f4-4f2a-9676-f757b61857d4.png"  >
 
 
 ## screenshoot Detail Profile Screen
 
-Setting Screen | Billing Details screen | Order History Screen | User Management | information | Logout
-:---: | :---: | :---: | :---: | :---: | :---: 
-<img src="https://user-images.githubusercontent.com/86775678/212104585-23d8eabb-51c1-4f48-8906-a65efaba4591.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212104822-f34cb5b6-6e3f-49c6-a48a-ba5d0714948b.png" width=50% height=50%> |
+Setting Screen | Billing Details screen | Order History Screen 
+:---: | :---: | :---: 
+<img src="https://user-images.githubusercontent.com/86775678/212347972-9688a3f0-07bb-4398-9c41-8520f149c69d.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348143-4f0dffaa-aeec-4026-a953-00ca263c2e59.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348320-267ae438-d86c-49b5-ab57-11739604339e.png" width=50% height=50%> 
 
 
 
