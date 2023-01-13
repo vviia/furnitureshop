@@ -4,7 +4,9 @@ import 'package:office_app_store/core/app_style.dart';
 import '../../model/furniture.dart';
 
 class CartListView extends StatelessWidget {
-  const CartListView({Key? key, required this.counterButton, required this.furnitureItems}) : super(key: key);
+  const CartListView(
+      {Key? key, required this.counterButton, required this.furnitureItems})
+      : super(key: key);
 
   final Widget Function(Furniture furniture) counterButton;
   final List<Furniture> furnitureItems;
@@ -40,10 +42,16 @@ class CartListView extends StatelessWidget {
                     children: [
                       const Text("Color : ", style: h4Style),
                       CircleAvatar(
-                        child: Container(
-                          decoration: BoxDecoration(color: furniture.colors.where((element) => element.isSelected).toList().first.color, shape: BoxShape.circle),
-                        ),
                         radius: 15,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: furniture.colors
+                                  .where((element) => element.isSelected)
+                                  .toList()
+                                  .first
+                                  .color,
+                              shape: BoxShape.circle),
+                        ),
                       )
                     ],
                   )

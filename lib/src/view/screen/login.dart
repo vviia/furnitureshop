@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:office_app_store/src/view/screen/profile_screen.dart';
+import 'package:office_app_store/src/view/screen/home_screen.dart';
 import 'package:office_app_store/core/app_style.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(height: 35),
                         GestureDetector(
                           onTap: () {
-                            Get.to(() => const ProfileScreen());
+                            Get.to(() => const HomeScreen());
                           },
                           child: Container(
                             decoration: BoxDecoration(
@@ -154,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                Get.to(() => const ProfileScreen());
+                                Get.to(() => const HomeScreen());
                               },
                               child: Container(
                                 width: 40,
@@ -170,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             const SizedBox(width: 50),
                             GestureDetector(
                               onTap: () {
-                                Get.to(() => const ProfileScreen());
+                                Get.to(() => const HomeScreen());
                               },
                               child: Container(
                                 width: 40,

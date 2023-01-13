@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:office_app_store/core/app_extension.dart';
+import 'package:office_app_store/core/app_style.dart';
 import 'package:office_app_store/src/view/screen/billing_detail.dart';
 import 'package:office_app_store/src/view/screen/information.dart';
 import 'package:office_app_store/src/view/screen/order_histori.dart';
@@ -11,10 +13,13 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Profile", style: h2Style),
+      ),
       body: ListView(
         children: [
           Container(
-            padding: const EdgeInsets.only(top: 20.0),
+            padding: const EdgeInsets.only(top: 10.0),
             child: Column(
               children: [
                 Row(
@@ -102,69 +107,66 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(top: 25.0),
-            child: Card(
-              child: ListTile(
-                onTap: () {
-                  Get.to(const SettingScreen());
-                },
-                leading: const Icon(Icons.settings),
-                title: const Text('Setting'),
-                trailing: const Icon(Icons.arrow_forward_ios),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              onTap: () {
-                Get.to(const BilingDetail());
-              },
-              leading: const Icon(Icons.card_membership),
-              title: const Text('Billing Details'),
-              trailing: const Icon(Icons.arrow_forward_ios),
-            ),
-          ),
-          // const Card(
-          //   child: ListTile(
-          //     leading: Icon(Icons.local_shipping),
-          //     title: Text('Shipping'),
-          //     trailing: Icon(Icons.arrow_forward_ios),
-          //   ),
-          // ),
-          Card(
-            child: ListTile(
-              onTap: () {
-                Get.to(const OrderHistory());
-              },
-              leading: const Icon(Icons.gif_box),
-              title: const Text('order history'),
-              trailing: const Icon(Icons.arrow_forward_ios),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              leading: Icon(Icons.person),
-              title: Text('User Management'),
-              trailing: Icon(Icons.arrow_forward_ios),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              onTap: () {
-                Get.to(const InformationScreen());
-              },
-              leading: const Icon(Icons.info_rounded),
-              title: const Text('Informations'),
-              trailing: const Icon(Icons.arrow_forward_ios),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              leading: Icon(Icons.logout),
-              title: Text('Logout'),
-              trailing: Icon(Icons.arrow_forward_ios),
-            ),
-          ),
+              padding:
+                  const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+              child: Column(
+                children: [
+                  Card(
+                    child: ListTile(
+                      onTap: () {
+                        Get.to(const SettingScreen());
+                      },
+                      leading: const Icon(Icons.settings),
+                      title: const Text('Setting'),
+                      trailing: const Icon(Icons.arrow_forward_ios),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      onTap: () {
+                        Get.to(const BilingDetail());
+                      },
+                      leading: const Icon(Icons.card_membership),
+                      title: const Text('Billing Details'),
+                      trailing: const Icon(Icons.arrow_forward_ios),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      onTap: () {
+                        Get.to(const OrderHistory());
+                      },
+                      leading: const Icon(Icons.gif_box),
+                      title: const Text('order history'),
+                      trailing: const Icon(Icons.arrow_forward_ios),
+                    ),
+                  ),
+                  // const Card(
+                  //   child: ListTile(
+                  //     leading: Icon(Icons.person),
+                  //     title: Text('User Management'),
+                  //     trailing: Icon(Icons.arrow_forward_ios),
+                  //   ),
+                  // ),
+                  Card(
+                    child: ListTile(
+                      onTap: () {
+                        Get.to(const InformationScreen());
+                      },
+                      leading: const Icon(Icons.info_rounded),
+                      title: const Text('Informations'),
+                      trailing: const Icon(Icons.arrow_forward_ios),
+                    ),
+                  ),
+                  const Card(
+                    child: ListTile(
+                      leading: Icon(Icons.logout),
+                      title: Text('Logout'),
+                      trailing: Icon(Icons.arrow_forward_ios),
+                    ),
+                  ),
+                ],
+              )).fadeAnimation(1.0),
         ],
       ),
     );

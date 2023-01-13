@@ -1,13 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:office_app_store/src/view/screen/profile_screen.dart';
+import 'package:office_app_store/core/app_extension.dart';
+import 'package:office_app_store/core/app_style.dart';
+import 'package:office_app_store/src/view/screen/home_screen.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
 
+  PreferredSizeWidget _appBar() {
+    return AppBar(
+      title: const Text("Setting", style: h2Style),
+      leading: IconButton(
+        icon: const Icon(
+          FontAwesomeIcons.arrowLeft,
+          color: Colors.black,
+        ),
+        onPressed: () {
+          Get.offAll(() => const HomeScreen());
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: _appBar(),
       body: ListView(
         children: [
           Container(
@@ -46,54 +65,60 @@ class SettingScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'Name',
-                      hintText: 'octtavviia',
-                      // border: OutlineInputBorder(
-                      //   borderRadius: BorderRadius.circular(10.0),
-                      // ),
-                    ),
-                  )),
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'username',
-                      hintText: '@vviia',
-                      // border: OutlineInputBorder(
-                      //   borderRadius: BorderRadius.circular(10.0),
-                      // ),
-                    ),
-                  )),
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'Street',
-                      hintText: 'Jl.Kaliurang KM 14,5',
-                    ),
-                  )),
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'City',
-                      hintText: 'Kota Yogyakarta',
-                    ),
-                  )),
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'Province',
-                      hintText: 'Yogyakarta',
-                    ),
-                  )),
-                  Form(
-                      child: TextFormField(
-                    decoration: const InputDecoration(
-                      labelText: 'Country',
-                      hintText: 'Indonesia',
-                    ),
-                  )),
+                  Container(
+                      padding: const EdgeInsets.all(25),
+                      child: Column(
+                        children: [
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'Name',
+                              hintText: 'octtavviia',
+                              // border: OutlineInputBorder(
+                              //   borderRadius: BorderRadius.circular(10.0),
+                              // ),
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'Username',
+                              hintText: '@vviia',
+                              // border: OutlineInputBorder(
+                              //   borderRadius: BorderRadius.circular(10.0),
+                              // ),
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'Street',
+                              hintText: 'Jl.Kaliurang KM 14,5',
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'City',
+                              hintText: 'Kota Yogyakarta',
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'Province',
+                              hintText: 'Yogyakarta',
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
+                              labelText: 'Country',
+                              hintText: 'Indonesia',
+                            ),
+                          )),
+                        ],
+                      )).fadeAnimation(1.0),
                   Container(
                     padding: const EdgeInsets.only(top: 30.0),
                     // mainAxisAlignment: MainAxisAlignment.center,
@@ -107,7 +132,7 @@ class SettingScreen extends StatelessWidget {
                             height: 50,
                             child: ElevatedButton(
                               onPressed: () {
-                                Get.to(() => const ProfileScreen());
+                                Get.to(() => const HomeScreen());
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.black,
@@ -120,7 +145,7 @@ class SettingScreen extends StatelessWidget {
                             height: 50,
                             child: ElevatedButton(
                               onPressed: () {
-                                Get.to(() => const ProfileScreen());
+                                Get.to(() => const HomeScreen());
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.black,
