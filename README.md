@@ -12,9 +12,9 @@ this project is developing from :  [Mansuriosdev](https://github.com/Mansurisode
 
 ## Screenshots
 
-Preview (template)         |   List screen             |   Detail Screen           |  Cart Screen
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_store_app.jpg?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_list_screen.png?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_detail_screen.png?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/cart_screen.png?raw=true)
+Preview (template)         |   List screen             |   Detail Screen           |  Cart Screen 
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------: 
+![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_store_app.jpg?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_list_screen.png?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/office_furniture_detail_screen.png?raw=true)|![](https://github.com/Mansurisodev/office_store_getX/blob/origin/screenshots/cart_screen.png?raw=true) 
 
 
   <br/>
@@ -31,9 +31,9 @@ Intro Screen | login screen | profile screen
 
 ## screenshoot Detail Profile Screen
 
-Setting Screen | Billing Details screen | Order History Screen 
-:---: | :---: | :---: 
-<img src="https://user-images.githubusercontent.com/86775678/212347972-9688a3f0-07bb-4398-9c41-8520f149c69d.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348143-4f0dffaa-aeec-4026-a953-00ca263c2e59.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348320-267ae438-d86c-49b5-ab57-11739604339e.png" width=50% height=50%> 
+Setting Screen | Billing Details screen | Order History Screen  | information screen
+:---: | :---: | :---: | :---:
+<img src="https://user-images.githubusercontent.com/86775678/212347972-9688a3f0-07bb-4398-9c41-8520f149c69d.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348143-4f0dffaa-aeec-4026-a953-00ca263c2e59.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212348320-267ae438-d86c-49b5-ab57-11739604339e.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/212544774-fdfd1d21-7159-4a37-9ef5-bef5cad53045.png" width=50% height=50%>
 
 
 
