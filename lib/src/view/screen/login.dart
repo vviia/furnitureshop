@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:office_app_store/src/view/screen/home_screen.dart';
@@ -11,8 +12,31 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  static Future<User?> loginUsingEmailPassword(
+      {required String email,
+      required String password,
+      required BuildContext context}) async {
+    FirebaseAuth auth = FirebaseAuth.instance;
+    User? user;
+    try {
+      UserCredential userCredential = await auth.signInWithEmailAndPassword(
+          email: email, password: password);
+      user = userCredential.user;
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        print('No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        print('Wrong password provided for that user.');
+      }
+    }
+
+    return user;
+  }
+
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -69,9 +93,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderRadius: BorderRadius.circular(12),
                             color: Colors.black,
                           ),
-                          child: const TextField(
-                            style: TextStyle(color: Colors.white),
-                            decoration: InputDecoration(
+                          child: TextField(
+                            controller: emailController,
+                            keyboardType: TextInputType.emailAddress,
+                            style: const TextStyle(color: Colors.white),
+                            decoration: const InputDecoration(
                               border: InputBorder.none,
                               prefixIcon: Icon(
                                 Icons.email,
@@ -98,9 +124,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderRadius: BorderRadius.circular(12),
                             color: Colors.black,
                           ),
-                          child: const TextField(
-                            style: TextStyle(color: Colors.white),
-                            decoration: InputDecoration(
+                          child: TextField(
+                            controller: passwordController,
+                            keyboardType: TextInputType.visiblePassword,
+                            style: const TextStyle(color: Colors.white),
+                            decoration: const InputDecoration(
                               border: InputBorder.none,
                               prefixIcon: Icon(
                                 Icons.lock,
@@ -113,8 +141,18 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         const SizedBox(height: 35),
                         GestureDetector(
-                          onTap: () {
-                            Get.to(() => const HomeScreen());
+                          onTap: () async {
+                            User? user = await loginUsingEmailPassword(
+                                email: emailController.text,
+                                password: passwordController.text,
+                                context: context);
+                            print(user);
+                            if (user != null) {
+                              Navigator.of(context).pushReplacement(
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const HomeScreen()));
+                            }
                           },
                           child: Container(
                             decoration: BoxDecoration(

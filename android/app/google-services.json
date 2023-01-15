@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "104171650341",
-    "project_id": "sevia-7f0f0",
-    "storage_bucket": "sevia-7f0f0.appspot.com"
+    "project_number": "773761951341",
+    "project_id": "seviadesk-ecommerce",
+    "storage_bucket": "seviadesk-ecommerce.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:104171650341:android:76eb67ecff11822de7eecc",
+        "mobilesdk_app_id": "1:773761951341:android:644e35e3bed98b80e54164",
         "android_client_info": {
           "package_name": "com.example.office_app_store"
         }
       },
       "oauth_client": [
         {
-          "client_id": "104171650341-60kfsv0be9ekhalsh7m0sgh9lci1t0ov.apps.googleusercontent.com",
+          "client_id": "773761951341-n2onmfqidcl6jvlle63sj9udal8p7je7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB4rdVGVFlnIp9CskglRMaBh_S8GkYvrew"
+          "current_key": "AIzaSyDEhMJW-TYyuMka9PDk_UKs1VI9OodQQGY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "104171650341-60kfsv0be9ekhalsh7m0sgh9lci1t0ov.apps.googleusercontent.com",
+              "client_id": "773761951341-n2onmfqidcl6jvlle63sj9udal8p7je7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
