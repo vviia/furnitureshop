@@ -92,6 +92,13 @@ class SettingScreen extends StatelessWidget {
                           Form(
                               child: TextFormField(
                             decoration: const InputDecoration(
+                              labelText: 'Phone Number',
+                              hintText: '6289529122055',
+                            ),
+                          )),
+                          Form(
+                              child: TextFormField(
+                            decoration: const InputDecoration(
                               labelText: 'Street',
                               hintText: 'Jl.Kaliurang KM 14,5',
                             ),
