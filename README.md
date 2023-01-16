@@ -4,9 +4,10 @@
 
 
 this project is developing from :  [Mansuriosdev](https://github.com/Mansurisodev)
-  <br/>
 
+<p align= center> ## description </p>
 
+GetX Login, a furniture shop app built with Flutter, offers an aesthetic design with smooth animations, making it easy to use. The app uses Firebase for login, providing a secure and seamless experience for users. Browse through a wide range of furniture options with ease and make your purchase with confidence. Upgrade your home decor today with GetX Login.
 
  <br/>
 
