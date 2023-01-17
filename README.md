@@ -11,7 +11,7 @@ GetX Login, a furniture shop app built with Flutter, offers an aesthetic design 
 
  <br/>
 
-## Screenshots
+## Screenshots project template
 
 Preview (template)         |   List screen             |   Detail Screen           |  Cart Screen 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------: 
@@ -21,7 +21,7 @@ Preview (template)         |   List screen             |   Detail Screen        
   <br/>
   
   
-## screenshoot
+## screenshoot project developing
 
 
 
@@ -97,4 +97,10 @@ Setting Screen | Billing Details screen | Order History Screen  | information sc
 ```
 
   <br/>
+  
+  backend progres:
+  
+  `[v]` authentification
+  
+  `[ ]` profile
 
